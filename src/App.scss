@@ -1,0 +1,15 @@
+$breakpoint: 600px;
+
+.TimeContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .TimeItem {
+    flex: 1 0 100%; /* for full width by default */
+    border: 1px solid #000;
+
+    @media (min-width: $breakpoint) {
+      flex: 1 0 33.33%; /* for one-third of the width when screen is >= 600px */
+    }
+  }
+}
